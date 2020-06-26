@@ -7,7 +7,7 @@ public class Main {
 
         int[] testArray = {1,2,3,-4,5,-6,-5,7,8,9,0};
 
-        minElementArray(testArray);
+        System.out.println(minElementArray(testArray));
 
     }
 
@@ -18,10 +18,13 @@ public class Main {
 
     // задание 1.2 | Поиск минимального элемента в массиве
     public static int minElementArray(int[] arr){
-        int x = 0;
+        int x = arr[0];
 
         for (int i = 0; i < arr.length ; i++) {
-            System.out.println(i);
+//            System.out.println(i);
+            if (x >= arr[i]) {
+                x = arr[i];
+            }
         }
         return x;
     }
