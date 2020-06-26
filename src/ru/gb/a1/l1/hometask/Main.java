@@ -17,9 +17,24 @@ public class Main {
     }
 
     // задание 1.1 | Возведение в степень
+    // сложность алгоритма на мой взгляд O(log(N)).
+
+//    public static int exponentiation (int a, int n) {
+//        if (n == 0)
+//            return 1;
+//        if (n % 2 == 1)
+//            return exponentiation (a, n-1) * a;
+//        else {
+//            int b = exponentiation (a, n/2);
+//            return b * b;
+//        }
+//    }
+
     public static int exponentiation(int digit, int exponentiation){
         return (int) Math.pow(digit, exponentiation);
     }
+
+
 
     // задание 1.2 | Поиск минимального элемента в массиве
     // сложность алгоритма на мой взгляд O(N).
