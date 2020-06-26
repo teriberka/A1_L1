@@ -9,6 +9,8 @@ public class Main {
 
         System.out.println(minElementArray(testArray));
 
+        System.out.println("Средне арифмитическо массива = " + average(testArray));
+
     }
 
     // задание 1.1 | Возведение в степень
@@ -29,4 +31,15 @@ public class Main {
         return x;
     }
 
+    // задание 1.3 | Нахождение среднего арифметического массива
+    public static double average (int[] arr){
+        int x = 0;
+
+        for (int i = 0; i < arr.length ; i++) {
+            x += arr[i];
+        }
+        System.out.println("Cреднее арифметическое массива = " + x);
+
+        return (double) x / arr.length;
+    }
 }
